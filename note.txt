@@ -13,13 +13,23 @@ package.json:
 
 Heroku:
 ---------
+//login
 $ heroku login
 
 //create new app
 $ heroku create
-
-https://thawing-savannah-69370.herokuapp.com/ 
+//give you the following: 
+https://thawing-savannah-69370.herokuapp.com/ <--URL to app 
 https://git.heroku.com/thawing-savannah-69370.git <--push code to there
+
+Git:
+---------
+$ git add .
+$ git commit -m "msg"
+$ git remote add heroku https://git.heroku.com/thawing-savannah-69370.git
+$ git push heroku master 
 
 $ git remote add heroku https://git.heroku.com/thawing-savannah-69370.git  <--heroku is like origin
 $ git push heroku master
+
+$ heroku logs
