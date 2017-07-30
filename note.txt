@@ -1,0 +1,25 @@
+package.json:
+---------------
+/*heroku requirement when it bootup our app*/
+"engine": {
+"node": "8.1.1",
+"npm": "5.0.3"
+}
+
+"scripts": {
+/*when heroku start our app, it runs 'start' cmd*/
+"start": "node index.js"
+},
+
+Heroku:
+---------
+$ heroku login
+
+//create new app
+$ heroku create
+
+https://thawing-savannah-69370.herokuapp.com/ 
+https://git.heroku.com/thawing-savannah-69370.git <--push code to there
+
+$ git remote add heroku https://git.heroku.com/thawing-savannah-69370.git  <--heroku is like origin
+$ git push heroku master
