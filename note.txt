@@ -26,7 +26,7 @@ Git:
 ---------
 $ git add .
 $ git commit -m "msg"
-$ git remote add heroku https://git.heroku.com/thawing-savannah-69370.git
+$ git remote add heroku https://git.heroku.com/thawing-savannah-69370.git <--only run on initial push 
 $ git push heroku master 
 
 $ git remote add heroku https://git.heroku.com/thawing-savannah-69370.git  <--heroku is like origin
