@@ -6,6 +6,7 @@ import ReactDOM from "react-dom";
 //it allows components to reach into the redux store for data anywhere in the component hierarchy 
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
+import reduxThunk from 'redux-thunk';
 
 import App from "./components/App";
 //root reducers
@@ -13,7 +14,7 @@ import reducers from './reducers';
 
 
 //redux store
-const store = createStore(reducers, {}, applyMiddleware());
+const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
 ReactDOM.render(
   <Provider store={store}>
