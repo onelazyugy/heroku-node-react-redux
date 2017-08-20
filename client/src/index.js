@@ -1,4 +1,5 @@
 //this is start of the app, render root app component to dom
+import 'materialize-css/dist/css/materialize.min.css';//extension because it is css
 import React from "react";
 import ReactDOM from "react-dom";
 //Provider is a react component that glues redux with react
