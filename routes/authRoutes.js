@@ -11,11 +11,17 @@ module.exports = (app) => {
   );
 
   //send the code back to google in exchange for email and user profile
-  app.get("/auth/google/callback", passport.authenticate("google"));
+  app.get(
+      "/auth/google/callback", passport.authenticate("google"),
+      //redirect after success login
+      (req, res) => {
+        res.redirect('/surveys');
+      }
+    );
 
   app.get('/api/logout', (req, res) => {
     req.logout(); //logout() is attached to req by passport
-    res.send(req.user);
+    res.redirect('/');
   })
 
   app.get('/api/current_user', (req, res) => {
